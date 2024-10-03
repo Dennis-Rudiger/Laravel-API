@@ -3,7 +3,7 @@ This is a Laravel API that works with a CRUD Angular app
 ## Project Setup ##
 To set up the project, I used Composer and ran the following command: composer require tymon/jwt-auth
 
-
+## Implementing JWT ##
 since it implements JWT authentication, I installed the `tymon/jwt-auth` package by running the command: 
 composer require tymon/jwt-auth
 
@@ -20,8 +20,10 @@ php artisan make:model Customer -mcr
 php artisan make:model Product -mcr
 
 and defined the schema in the migration files for customers and products
+##Running Migrations##
 
 The API was connected to a mysql database by configuring the .env file and updating the config
+Data tables are migrated to the mysql database by running php artisan migrate
 
 I added routes for authentication, customers, and products in routes/api.php
 
