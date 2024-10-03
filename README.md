@@ -20,7 +20,7 @@ php artisan make:model Customer -mcr
 php artisan make:model Product -mcr
 
 and defined the schema in the migration files for customers and products
-##Running Migrations##
+## Running Migrations ##
 
 The API was connected to a mysql database by configuring the .env file and updating the config
 Data tables are migrated to the mysql database by running php artisan migrate
